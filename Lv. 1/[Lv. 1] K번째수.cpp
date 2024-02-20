@@ -66,37 +66,37 @@ class heap : public priority_queue<T, vector<T>, greater<T>>
 template <typename T>
 ostream& operator<<(ostream& os, vector<T>& vec)
 {
-	for (T& value : vec)
-		os << value << ' ';
-	return os;
+    for (T& value : vec)
+        os << value << ' ';
+    return os;
 }
 
 template <typename T, size_t N>
 ostream& operator<<(ostream& os, array<T, N>& vec)
 {
-	for (T& value : vec)
-		os << value << ' ';
-	return os;
+    for (T& value : vec)
+        os << value << ' ';
+    return os;
 }
 
 int CutAndSort(vector<int>& array, vector<int> cmd)
 {
-	int n = cmd[1] - cmd[0] + 1;
+    int n = cmd[1] - cmd[0] + 1;
 
-	vector<int> temp(n);
-	For(n)
-		temp[i] = array[i + cmd[0] - 1];
-	sort(stoe(temp));
+    vector<int> temp(n);
+    For(n)
+        temp[i] = array[i + cmd[0] - 1];
+    sort(stoe(temp));
 
-	return temp[cmd[2] - 1];
+    return temp[cmd[2] - 1];
 }
 
 vector<int> solution(vector<int> array, vector<vector<int>> commands)
 {
-	int n = commands.size();
+    int n = commands.size();
 
-	vector<int> result(n);
-	For(n)
-		result[i] = CutAndSort(array, commands[i]);
-	return result;
+    vector<int> result(n);
+    For(n)
+        result[i] = CutAndSort(array, commands[i]);
+    return result;
 }

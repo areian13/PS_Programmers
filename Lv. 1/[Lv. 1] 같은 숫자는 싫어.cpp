@@ -66,29 +66,29 @@ class heap : public priority_queue<T, vector<T>, greater<T>>
 template <typename T>
 ostream& operator<<(ostream& os, vector<T>& vec)
 {
-	for (T& value : vec)
-		os << value << ' ';
-	return os;
+    for (T& value : vec)
+        os << value << ' ';
+    return os;
 }
 
 template <typename T, size_t N>
 ostream& operator<<(ostream& os, array<T, N>& vec)
 {
-	for (T& value : vec)
-		os << value << ' ';
-	return os;
+    for (T& value : vec)
+        os << value << ' ';
+    return os;
 }
 
 vector<int> solution(vector<int> arr)
 {
-	int n = arr.size();
-	arr.push_back(-1);
+    int n = arr.size();
+    arr.push_back(-1);
 
-	vector<int> result;
-	For(n)
-	{
-		if (arr[i] != arr[i + 1])
-			result.push_back(arr[i]);
-	}
-	return result;
+    vector<int> result;
+    For(n)
+    {
+        if (arr[i] != arr[i + 1])
+            result.push_back(arr[i]);
+    }
+    return result;
 }

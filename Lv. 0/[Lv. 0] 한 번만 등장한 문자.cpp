@@ -5,17 +5,17 @@ using namespace std;
 
 string solution(string s)
 {
-	int n = s.size();
+    int n = s.size();
 
-	array<int, 26> cnt = { 0, };
-	for (int i = 0; i < n; i++)
-		cnt[s[i] - 'a']++;
+    array<int, 26> cnt = { 0, };
+    for (int i = 0; i < n; i++)
+        cnt[s[i] - 'a']++;
 
-	string result = "";
-	for (int i = 0; i < 26; i++)
-	{
-		if (cnt[i] == 1)
-			result += (i + 'a');
-	}
-	return result;
+    string result = "";
+    for (int i = 0; i < 26; i++)
+    {
+        if (cnt[i] == 1)
+            result += (i + 'a');
+    }
+    return result;
 }
