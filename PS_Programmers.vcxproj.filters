@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lv. 0\[Lv. 0] 문자열 출력하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Lv. 0\[Lv. 0] 안전지대.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
