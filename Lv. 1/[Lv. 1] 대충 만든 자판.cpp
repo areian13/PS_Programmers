@@ -1,6 +1,6 @@
 #include <vector>
-#include <array>
 #include <string>
+#include <array>
 #include <algorithm>
 
 using namespace std;
